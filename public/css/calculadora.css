@@ -1,0 +1,43 @@
+/* Google fonts https://fonts.google.com/ */
+
+/* *{
+    margin: 0;
+    padding: 0;
+    font-size: 35px;
+    font-family: 'Orbitron', sans-serif;
+    background-color: rgb(191, 243, 226)    ;
+} */
+
+.calc{
+    font-size: 1.5em;
+    width: 320px;
+    margin: auto;
+    background-color: #39383d;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.calc-display{
+    padding-left: 8px;
+    width: 98%;
+    height: 70px;
+    border: none;
+    background-color: #a2af77;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+input[type=button]{
+    width: 70px;
+    height: 70px;
+    margin: 2px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    background-color: #58595b;
+    cursor: pointer;
+    
+}
+input[type=button]:hover{
+    opacity: 0.8;
+}

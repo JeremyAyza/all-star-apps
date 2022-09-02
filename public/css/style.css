@@ -1,0 +1,535 @@
+body {
+    margin: 0;
+    font-family: Inconsolata;
+    background-image: url(https://images.pexels.com/photos/2129796/pexels-photo-2129796.png?cs=srgb&dl=pexels-david-skyrius-2129796.jpg&fm=jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+/* Main?? */
+.main {
+
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+
+}
+
+
+
+
+/* HEADER */
+.header {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0 auto;
+}
+
+.header__title {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 3em;
+    line-height: 1em;
+    margin: 0;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    color: white;
+
+}
+
+/* ----MENU---- */
+/* se le tiene que dar display none al nav para ignorar su existencia
+en cambio si fuera solo a su nav-menu aun quedaría la caja nav */
+.nav {
+    visibility: hidden;
+    position: absolute;
+    background-color: rgba(19, 19, 19, 0.911);
+    align-items: center;
+    width: 100%;
+    top: 80px;
+    z-index: 9999;
+    left: 0;
+    
+
+}
+
+.menu__link {
+    text-decoration: none;
+    background-color: rgb(19, 19, 19);
+    background-color: white;
+    color: #b9b9b9;
+    display: block;
+    width: 100%;
+    padding: 15px 0;
+    text-align: center;
+    border-bottom: #b9b9b9 solid 1px;
+}
+
+/* .menu__link:last-child{
+    color: rgb(6, 91, 202);
+    display: block;
+} */
+
+.menu__link:hover {
+    color: #454545;
+    transition: 0.05s;
+    background-color: #ffffffaf;
+}
+
+
+
+/* ------------ */
+
+.icon-menu {
+    font-size: 1.5em;
+    /* border: 1px solid rgb(0, 26, 255); */
+    padding: 10px 0;
+    cursor: pointer;
+    
+    display: block;
+}
+
+
+.shop__btn {
+    color: white;
+    display: block;
+    border: 3px solid rgba(255, 34, 34, 0.95);
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    width: 180px;
+    margin: 10px auto;
+    font-weight: bold;
+}
+
+.shop__btn:hover {
+    background-color: rgba(255, 34, 34, 0.95);
+    transition: 0.05s all;
+}
+
+/* ---------------- */
+
+.main-title{
+    color: white;
+    font-size: 2em;
+}
+
+
+
+
+
+
+
+
+
+/* EDITOR */
+.editor {
+    margin: 10px 0;
+}
+
+.editor__item {
+
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 2px 2px 5px #999;
+    margin: 10px auto;
+}
+
+.editor__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.editor__circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 3px rgb(255, 255, 255) solid;
+    color: white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    bottom: -200px;
+    right: -200px;
+    padding: 20px;
+    padding-right: 55px;
+    padding-bottom: 65px;
+    overflow: unset;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.editor__item:hover .editor__circle {
+    transform: (1.2);
+    bottom: -200px;
+    right: -200px;
+    right: -50px;
+    bottom: -100px;
+
+}
+
+.editor__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0.01;
+
+}
+
+.editor__item:hover:before {
+    background: white;
+    opacity: 0.09;
+    transition: 0.2s;
+
+}
+
+
+
+/* Testimonios */
+.container-testimonio {
+    margin: 10px auto;
+    background: rgb(235, 235, 235);
+    max-width: 400px;
+    text-align: center;
+    padding: 20px 40px;
+    
+}
+
+.testimonio__date {
+    font-size: 2.2em;
+    font-weight: 500;
+}
+
+.testimonio__name {
+    font-size: 1.4em;
+    font-weight: 100;
+}
+
+.testimonio__state {
+    color: rgba(255, 34, 34, 0.95);
+    font-size: 1.4em;
+    font-weight: 00;
+}
+
+.testimonio__txt {
+    color: rgb(160, 160, 160);
+    font-size: 1em;
+    font-weight: 5em;
+    line-height: 1.5em;
+}
+
+
+
+/*  TIPS */
+.container-tips {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin: 10px 0;
+
+}
+
+.tips__item {
+    background: rgb(235, 235, 235);
+    margin: 10px;
+    padding: 30px 20px;
+    border-radius: 1px;
+    min-height: 220px;
+    max-width: 200px;
+    
+
+
+}
+
+.tips__icon {
+    font-size: 2em;
+    color: rgb(160, 160, 160);
+    padding-top: 20px;
+    
+}
+
+.tips__title {
+    margin: 8px 0;
+    font-weight: 400;
+}
+
+.tips__txt {
+    font-size: 0.9em;
+    font-weight: 5em;
+    color: rgb(160, 160, 160);
+
+}
+
+.container-tips .shop__btn {
+    color: black;
+}
+
+
+
+
+
+
+/* Footer */
+.footer {
+    margin: 10px 0 0 0 ;
+    padding: 20px 20px;
+    background-color: rgb(51, 51, 51);
+    color: rgb(160, 160, 160);
+}
+
+.footer__title {
+
+    color: rgb(216, 216, 216);
+    font-size: 1.2em;
+    border-bottom: dotted 1px rgb(160, 160, 160);
+    padding-bottom: 10px;
+
+}
+
+.footer__subtitle {
+    color: rgb(216, 8, 8);
+    padding-top: 10px;
+    line-height: 0em;
+}
+
+.footer__txt {
+    color: rgb(160, 160, 160);
+    font-size: 0.9em;
+    font-weight: 5em;
+    line-height: 1.5em;
+}
+
+.footer__link {
+    text-decoration: none;
+    display: block;
+    padding: 2px 4px;
+    color: rgb(160, 160, 160);
+    font-size: 0.9em;
+    line-height: 1.8em;
+
+}
+
+.footer__input {
+    background-color: rgb(51, 51, 51);
+    width: 90%;
+    display: block;
+    height: 35px;
+    padding: 10px;
+    border: rgb(149, 149, 149) 1px solid;
+    color: white;
+}
+
+.footer__copy {
+    text-align: center;
+    color: rgb(160, 160, 160);
+    font-size: 0.9em;
+    font-weight: 5em;
+    line-height: 1.5em;
+    padding: 10px;
+
+}
+
+.copy__color {
+    color: rgb(216, 8, 8);
+}
+
+.footer-item i {
+    padding-right: 10px;
+}
+
+
+/* RESPONSIV PARA TABLET */
+/* @media screen and (min-width:800px) {
+    .main{
+        padding: 0 10%;
+    }
+    
+} */
+
+
+/* RESPONSIV PARA ESCRITORIO */
+@media screen and (min-width:724px) {
+    .container-testimonio{
+        max-width: 600px;
+    }
+    .main{
+       padding: 20px 4%;
+    }
+    .icon-menu {
+        color: green;
+        display: none;
+    }
+    
+    .nav {
+        
+        position: static;
+        width: 100%;
+        background: none;
+        display: flex;
+        justify-content: space-around;
+        color: black;
+        border-bottom: solid 1px white;
+
+    }
+
+
+    .menu__link {
+        color: rgb(255, 255, 255);
+        background: none;
+        margin: 0 2px;
+    }
+
+    .menu__link:hover {
+        background-color: #acacac;
+        color: white;
+        transition: 0.005s;
+    }
+
+
+    .header {
+        display: flex;
+        justify-content: space-around;
+
+
+    }
+
+    .header__container {
+        flex-wrap: wrap;
+        align-content: flex-start;
+        padding: 10px 0;
+    }
+
+    .header__title {
+        width: 100%;
+        font-size: 4em;
+        margin: 0;
+        border-bottom: solid 1px white;
+        font-family: 'Yanone Kaffeesatz', sans-serif;
+    }
+
+
+
+
+
+
+    .container-tips {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+
+    .tips__item {
+        margin: 20px auto;
+    }
+
+
+    
+
+    .editor__item {
+        max-width: 75%;
+    }
+
+
+    .footer {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+
+    }
+
+    .copy {
+        grid-column-start: span 4;
+    }
+
+    .container-products {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+
+    }
+}
+
+@media screen and (min-width:1024px) {
+    
+    .container-testimonio{
+        max-width: 800px;
+    }
+    .container-tips {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
+    .container-editor {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .editor__item {
+        max-width: 45%;
+    }
+
+}
+
+
+.tips__img{
+    border: 1px solid black;
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    overflow: hidden;
+    
+
+}
+
+.tips__img img{
+    width: 100%;
+    height: 100%;
+}
+
+.tips_redes{
+    margin-top: 10px;
+
+}
+
+.tips_redes a{
+
+    font-size: 1.5em;
+    color: rgb(0, 119, 255);
+    margin: 5px;
+}
+.nosotros{
+    margin: 10px 10px;
+}
+
+.blue{
+    border: 3px solid rgb(0, 119, 255);
+
+}
+.blue:hover{
+    background-color: rgb(0, 119, 255);
+}
+
+

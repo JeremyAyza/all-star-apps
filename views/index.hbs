@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Star Apps</title>
+
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="ics/icon-app2.png">
+
+
+
+  {{!-- en linea --}}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body onload="getAncho();" onresize="getAncho();">
+
+  {{>header}}
+  <main class="main">
+    <div class="container">
+      <h2 class="main-title">Main:</h2>
+
+      <section class="testimonio">
+        <div class="container-testimonio">
+          <h2 class="testimonio__date">Testimonio</h2>
+          <h3 class="testimonio__name">Desarrollo del proyecto</h3>
+          <h3 class="testimonio__state">IDAT</h3>
+          <p class="testimonio__txt">
+            Primero que nada, queremos darles las gracias a nuestro profesor por todo lo aprendido en clases, así mismo
+            agradecer a aquellos que se tomaron la molestia de llegar a nuestra pagina web.
+            <br>
+            Somos un grupo de alumnos y jóvenes developers con una gran visión del futuro estando en nuestro cuarto
+            ciclo del Instituto Superior Tecnológico Idat haciendo uso las herramientas y métodos de enseñanza
+            aprendidos
+            en nuestro ciclo actual, estamos orgullosos de presentarles nuestra pagina dinámica ya realizada y
+            completamente funcional usando HTML, CSS y JavaScript, presentamos distintas apps para
+            su libre uso, espero les gusten y les seas de utilidad para futuros ejemplos o ideas que tengan, muchas
+            gracias por encontrar nuestra pagina.
+            <br>
+
+            Somos Arianno Sanchez, Jeremy Ayza, Wilmer Chancafe y Bryan Delgado y no olviden compañeros programadores
+            <center><strong>Si se puede Imaginar se puede programar</strong></center>
+          </p>
+        </div>
+      </section>
+
+
+
+
+      <h2 class="main-title">Aplicaciones Desarrolladas:</h2>
+      <section class="tips">
+        <div class="container-tips">
+          <div class="tips__item">
+            <div class="tips__icon"><i class="fa-solid fa-calculator"></i></div>
+            <h2 class="tips__title">Calculadora</h2>
+            <div class="tips__txt">Este aplicativo web nos permitirá hacer cálculos básicos como suma, resta, multiplicación y división.
+              <br>
+              HTML, CSS y JS.
+            </div>
+            <a href="/calculadora" class="shop__btn">Ver Ahora</a>
+          </div>
+          <div class="tips__item">
+            <div class="tips__icon"><i class="fa-solid fa-list"></i></div>
+            <h2 class="tips__title">Todo List</h2>
+            <div class="tips__txt">
+              Es una aplicación que permite guardar, tachar y eliminar tareas, sirve para en listar tareas pedientes con una buena organización.
+              <br>
+              HTML, CSS y JS.
+            </div>
+            <a href="/todolist" class="shop__btn">Ver Ahora</a>
+          </div>
+          <div class="tips__item">
+            <div class="tips__icon"><i class="fa-solid fa-clock"></i></div>
+            <h2 class="tips__title">Reloj Digital</h2>
+            <div class="tips__txt">Este aplicativo web hará diseñado con JQuery, calcula la hora actual, los minutos y segundo.
+              <br>
+              HTML, CSS, JS y JQuery.
+            </div>
+            <a href="/reloj" class="shop__btn">Ver Ahora</a>
+          </div>
+          
+        </div>
+      </section>
+
+
+      <section class="editor">
+        <h2 class="main-title">Tecnologias:</h2>
+        <div class="container-editor">
+          <div class="editor__item">
+            <img class="editor__img" src="img/frontend3.jpg" alt="">
+            <p class="editor__circle">FRONTEND<br>HTML, CSS, JS, React y Angular </p>
+          </div>
+          <div class="editor__item">
+            <img class="editor__img" src="img/backend.jpg" alt="">
+            <p class="editor__circle">BACKEND<br>NODE, EXPRESS, PHP y JAVA</p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+  </main>
+
+
+  {{>footer}}
+
+  <script src="js/nav.js"></script>
+</body>
+
+</html>

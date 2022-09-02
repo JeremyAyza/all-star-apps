@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Star Apps</title>
+
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="ics/icon-app2.png">
+
+
+
+  {{!-- en linea --}}
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;600&family=Roboto:ital,wght@0,300;0,400;0,500;0,900;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body onload="getAncho();" onresize="getAncho();">
+
+  {{>header}}
+  <main class="main">
+    <div class="container" >
+
+      <h2 class="main-title">NOSOTROS:</h2>
+      <section class="tips">
+
+        <div class="container-tips">
+
+
+
+          <div class="tips__item nosotros" >
+            <center>
+            <div class="tips__img"><img src="{{jeremy.foto}}" alt=""></div>
+            </center>
+            <h2 class="tips__name">{{jeremy.nombreCompleto}}</h2>
+            
+            <div class="tips__description">
+              {{jeremy.descripcion}}
+            </div>
+            <div class="tips_redes">
+              <a href="{{jeremy.gh}}"  target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="{{jeremy.in}}"  target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="{{jeremy.tw}}"  target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+
+
+            <span  class="shop__btn blue">Desarrollador</span>
+          </div>
+
+
+          <div class="tips__item nosotros" >
+            <center>
+            <div class="tips__img"><img src="{{arianno.foto}}" alt=""></div>
+            </center>
+            <h2 class="tips__name">{{arianno.nombreCompleto}}</h2>
+            
+            <div class="tips__description">
+              {{arianno.descripcion}}
+            </div>
+            <div class="tips_redes">
+              <a href="{{arianno.gh}}"  target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="{{arianno.in}}"  target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="{{arianno.tw}}"  target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+
+
+            <span  class="shop__btn blue">Desarrollador</span>
+          </div>
+
+
+          <div class="tips__item nosotros" >
+            <center>
+            <div class="tips__img"><img src="{{wilmer.foto}}" alt=""></div>
+            </center>
+            <h2 class="tips__name">{{wilmer.nombreCompleto}}</h2>
+            
+            <div class="tips__description">
+              {{wilmer.descripcion}}
+            </div>
+            <div class="tips_redes">
+              <a href="{{wilmer.gh}}"  target="_blank"><i class="fa-brands fa-github"></i></a>
+              <a href="{{wilmer.in}}"  target="_blank" ><i class="fa-brands fa-linkedin"></i></a>
+              <a href="{{wilmer.tw}}"  target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+
+
+            <span  class="shop__btn blue">Desarrollador</span>
+          </div>
+
+
+
+          
+          
+
+
+          
+          
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+
+  {{>footer}}
+
+
+  
+  <script src="js/nav.js"></script>
+</body>
+
+</html>
